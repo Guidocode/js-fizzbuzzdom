@@ -18,7 +18,7 @@
 // Consegna
 
 // salvo il container in una const
-const container = document.querySelector(".gb-container");
+const container = document.querySelector('.gb-container');
 
 // stabilisco il numero di iterazioni
 const limit = 100;
@@ -31,9 +31,9 @@ const mult5 = 5;
 for (let i=1; i <= limit; i++){
 
   // creo l'elemento da aggiungere
-  const boxElement = document.createElement("div");
+  const boxElement = document.createElement('div');
   // gli scrivo la classe
-  boxElement.className = "box";
+  boxElement.className = 'box';
   // aggiungo il contenuto
   boxElement.append(i);
   // stampo in console per vederlo
@@ -41,13 +41,17 @@ for (let i=1; i <= limit; i++){
 
   // Se multiplo di 3 stampo fizz
   if(!(i % mult3)){
-    boxElement.classList.add("fizz");
+    boxElement.classList.add('bg-fizz');
+    boxElement.remove('i');
+    boxElement.append('fizz');
   // Se multiplo di 5 stampo buzz
   }else if(!(i % mult5)){
-    boxElement.classList.add("buzz");
+    boxElement.classList.add('bg-buzz');
+    boxElement.append('buzz');
   // Se multiplo sia di 3 che di 5 stampo fizzbuzz
   }else if(!(i % mult3) && !(i % mult5)){
-    boxElement.classList.add("fizzbuzz");
+    boxElement.classList.add('bg-fizzbuzz');
+    boxElement.append('fizzbuzz');
   };
 
   // lo aggiungo al contenitore

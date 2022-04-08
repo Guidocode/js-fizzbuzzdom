@@ -32,14 +32,14 @@ h1{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.fizz{
+.bg-fizz{
   background-color: #0AD6A1;
 }
 
-.buzz{
+.bg-buzz{
   background-color: #FFD166;
 }
 
-.fizzbuzz{
+.bg-fizzbuzz{
   background-color: #F0466E;
 }
